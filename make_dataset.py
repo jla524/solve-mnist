@@ -4,7 +4,7 @@ Define functions to download and load the dataset
 from pathlib import Path
 import requests
 
-root_dir = Path(__file__).resolve(strict=True).parent.parent.parent
+root_dir = Path(__file__).resolve(strict=True).parent
 data_dir = root_dir / 'data'
 
 

@@ -1,7 +1,7 @@
 #################################################################################
 # GLOBALS                                                                       #
 #################################################################################
-PROJECT_NAME = f1-analysis
+PROJECT_NAME = solve_mnist
 PYTHON_INTERPRETER = python3
 
 #################################################################################
@@ -14,7 +14,7 @@ requirements:
 
 ## Make Dataset
 data: requirements
-		poetry run $(PYTHON_INTERPRETER) src/data/make_dataset.py
+		poetry run $(PYTHON_INTERPRETER) make_dataset.py
 
 ## Delete all compiled Python files
 clean: 
